@@ -1,12 +1,12 @@
 import React from "react";
-import logo from '../images/foodhub logo.png'
+import logo from '../images/logo.png'
 export const Navbar = () => {
     // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         // Navbar of website
         <div class="bg-red-600">
-            <div class="px-4 py-1 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+            <div class="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div class="relative flex items-center justify-between">
                     <a
                         href="/"
@@ -15,13 +15,13 @@ export const Navbar = () => {
                         class="inline-flex items-center"
                     >
                         <img
-                            className="object-cover w-20 h-20 rounded-full shadow"
+                            className="object-cover w-12 h-12 rounded-full shadow"
                             src={logo}
                             alt="Person"
                         />
-                        {/* <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
+                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                             FoodHub
-                        </span> */}
+                        </span>
                     </a>
                     <ul class="flex items-center hidden space-x-8 lg:flex">
                         <li>
@@ -29,7 +29,7 @@ export const Navbar = () => {
                                 href="/"
                                 aria-label="Our product"
                                 title="Our product"
-                                class="font-medium tracking-wide text-lg text-white transition-colors duration-200 hover:text-teal-accent-400"
+                                class="font-medium tracking-wide text-lg text-white transition-colors duration-200 hover:text-red-100"
                             >
                                 Home
                             </a>
@@ -39,7 +39,7 @@ export const Navbar = () => {
                                 href="/"
                                 aria-label="Our product"
                                 title="Our product"
-                                class="font-medium tracking-wide text-lg text-white transition-colors duration-200 hover:text-teal-accent-400"
+                                class="font-medium tracking-wide text-lg text-white transition-colors duration-200 hover:text-red-100"
                             >
                                 Delivery
                             </a>
@@ -49,7 +49,7 @@ export const Navbar = () => {
                                 href="/"
                                 aria-label="Product pricing"
                                 title="Product pricing"
-                                class="font-medium tracking-wide text-lg text-white transition-colors duration-200 hover:text-teal-accent-400"
+                                class="font-medium tracking-wide text-lg text-white transition-colors duration-200 hover:text-red-100"
                             >
                                 Dining Out
                             </a>
@@ -59,7 +59,7 @@ export const Navbar = () => {
                                 href="/"
                                 aria-label="About us"
                                 title="About us"
-                                class="font-medium tracking-wide text-lg text-white transition-colors duration-200 hover:text-teal-accent-400"
+                                class="font-medium tracking-wide text-lg text-white transition-colors duration-200 hover:text-red-100"
                             >
                                 About us
                             </a>
@@ -77,9 +77,9 @@ export const Navbar = () => {
                         <li>
                             <a
                                 href="/"
-                                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-red-600 bg-white hover:bg-red-800 hover:text-white focus:shadow-outline focus:outline-none"
-                                aria-label="Sign up"
-                                title="Sign up"
+                                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-red-600 bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
+                                aria-label="Login"
+                                title="Login"
                             >
                                 Login
                             </a>
@@ -89,7 +89,7 @@ export const Navbar = () => {
                         <li>
                             <a
                                 href="/"
-                                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-red-600 transition duration-200 rounded shadow-md bg-white hover:bg-red-800 hover:text-white focus:shadow-outline focus:outline-none"
+                                class="inline-flex items-center justify-center h-12 px-5 font-medium tracking-wide text-red-600 transition duration-200 rounded shadow-md bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
                                 aria-label="Sign up"
                                 title="Sign up"
                             >
