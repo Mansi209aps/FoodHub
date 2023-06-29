@@ -1,14 +1,19 @@
 import React from 'react';
-import { Navbar } from './components/Shared/Navbar';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Home } from './components/Pages/Home';
-import { Footer } from './components/Shared/Footer';
+import Gallery from './components/Pages/Gallery';
+import Menu from './components/Pages/Menu';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/gallery' element={<Gallery />} />
+          <Route exact path='/ordernow' element={<Menu />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

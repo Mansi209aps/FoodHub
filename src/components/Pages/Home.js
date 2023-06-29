@@ -1,8 +1,12 @@
 import React from "react";
+import { Navbar } from "../Shared/Navbar";
+import { Footer } from "../Shared/Footer";
 
 export const Home = () => {
     return (
+
         <div>
+            <Navbar />
             <div className="relative">
                 <img
                     src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
@@ -22,7 +26,7 @@ export const Home = () => {
                                     From the vibrant spices of Indian cuisine to the comforting indulgence of burgers, the awakening aroma of coffee, the joy embodied in pizza, the celebratory sweetness of cakes to the  the syrupy bliss of a rasgulla, each flavor tells a unique story that delights the senses.
                                 </p>
                                 <a
-                                    href="/"
+                                    href="/ordernow"
                                     class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-red-500 hover:bg-white hover:text-red-800 hover:border-4 border-red-600 focus:shadow-outline focus:outline-none "
                                     aria-label="Order now"
                                     title="Order now"
@@ -183,7 +187,7 @@ export const Home = () => {
             </div>
             <div className="text-center">
                 <a
-                    href="/"
+                    href="/gallery"
                     aria-label=""
                     className="inline-flex items-center font-semibold transition-colors duration-200 text-red-600 hover:text-red-900 text-xl"
                 >
@@ -404,6 +408,7 @@ export const Home = () => {
                     </div> */}
                 </div>
             </div>
+            <Footer />
         </div>
 
     );
