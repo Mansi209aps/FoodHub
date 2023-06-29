@@ -205,7 +205,9 @@ export const Home = () => {
                         className="object-cover w-24 h-24 rounded-full shadow"
                         src="https://images.pexels.com/photos/1460872/pexels-photo-1460872.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                         alt="Person"
+
                     />
+
                     <img
                         className="object-cover w-24 h-24 rounded-full shadow"
                         src="https://images.pexels.com/photos/4394612/pexels-photo-4394612.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
