@@ -1,21 +1,22 @@
 import React from "react";
-
+import img1 from '../images/DSC_1013016.jpg'
+import img2 from '../images/DSC_1013016a.jpg'
 export const Footer = () => {
     return (
         <div>
-            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-red-600">
+            <div className=" flex px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-red-600">
                 <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
 
                     <div>
                         <img
                             className="object-cover w-24 h-24 rounded-full shadow"
-                            src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            src={img2}
                             alt="Person"
                         />
                         <div className="flex flex-col justify-center mt-2">
-                            <p className="text-lg font-bold">Marta Clermont</p>
-                            <p className="mb-4 text-xs text-gray-800">Design Team Lead</p>
-                            <p className="text-sm tracking-wide text-gray-800">
+                            <p className="text-white font-bold">Ritik Raj</p>
+                            <p className="mb-4 text-xs text-white">Full Stack Developer</p>
+                            <p className="text-sm tracking-wide text-white">
                                 Secondary fermentation degrees plato units of bitterness, cask
                                 conditioned ale ibu real ale pint glass craft beer. krausen goblet
                                 grainy ibu.
@@ -25,27 +26,52 @@ export const Footer = () => {
                     <div>
                         <img
                             className="object-cover w-24 h-24 rounded-full shadow"
-                            src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            src={img1}
                             alt="Person"
                         />
                         <div className="flex flex-col justify-center mt-2">
-                            <p className="text-lg font-bold">Alice Melbourne</p>
-                            <p className="mb-4 text-xs text-gray-800">Human Resources</p>
-                            <p className="text-sm tracking-wide text-gray-800">
+                            <p className="text-white font-bold">Mansi</p>
+                            <p className="mb-4 text-xs text-white">Full Stack Developer</p>
+                            <p className="text-sm tracking-wide text-white">
                                 I just closed my eyes and in a nanosecond I cured myself from this
                                 ridiculous model of disease, addiction and obsession.
                             </p>
                         </div>
+
+                    </div>
+                    <div className="flex flex-col justify-center mx-9 mt-2 md:max-w-md lg:col-span-2">
+                        <span className="text-base font-medium tracking-wide text-white">
+                            Subscribe for updates
+                        </span>
+                        <form className="flex flex-col mt-4 md:flex-row">
+                            <input
+                                placeholder="Email"
+                                required
+                                type="text"
+                                className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                            />
+                            <button
+                                type="submit"
+                                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-red-600 bg-white hover:bg-red-800 hover:text-white focus:shadow-outline focus:outline-none"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
+                        <p className="mt-4 text-sm text-white">
+                            We respect your privacy. Unsubscribe at any time.
+                        </p>
                     </div>
 
                 </div>
+
             </div>
+
 
 
             {/* copyright  */}
             <div className="flex flex-col justify-between pt-5 pb-10 px-4 bg-red-600 border-t border-white sm:flex-row">
                 <p className="text-sm text-white">
-                    © Copyright 2020 Lorem Inc. All rights reserved.
+                    © Copyright 2020 FoodHub Inc. All rights reserved.
                 </p>
                 <div className="flex items-center mt-4 space-x-4 sm:mt-0">
                     <a
