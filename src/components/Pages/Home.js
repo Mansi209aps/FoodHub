@@ -199,9 +199,40 @@ export const Home = () => {
 
 
             {/* Variety */}
-            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                <div className="grid grid-cols-2 gap-5 row-gap-5 sm:grid-cols-3 lg:grid-cols-6">
-                    <div className="text-center">
+            <div className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div className="grid grid-cols-2 gap-7 row-gap-5 sm:grid-cols-3 lg:grid-cols-6">
+                    <img
+                        className="object-cover w-24 h-24 rounded-full shadow"
+                        src="https://images.pexels.com/photos/1460872/pexels-photo-1460872.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        alt="Person"
+                    />
+                    <img
+                        className="object-cover w-24 h-24 rounded-full shadow"
+                        src="https://images.pexels.com/photos/4394612/pexels-photo-4394612.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        alt="Person"
+                    />
+                    <img
+                        className="object-cover w-24 h-24 rounded-full shadow"
+                        src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        alt="Person"
+                    />
+                    <img
+                        className="object-cover w-24 h-24 rounded-full shadow"
+                        src="https://images.pexels.com/photos/4403082/pexels-photo-4403082.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        alt="Person"
+                    />
+                    <img
+                        className="object-cover w-24 h-24 rounded-full shadow"
+                        src="https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        alt="Person"
+                    />
+                    <img
+                        className="object-cover w-24 h-24 rounded-full shadow"
+                        src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        alt="Person"
+                    />
+
+                    {/* <div className="text-center">
                         <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
                             <svg
                                 className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
@@ -220,8 +251,8 @@ export const Home = () => {
                         <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
                             World
                         </h6>
-                    </div>
-                    <div className="text-center">
+                    </div> */}
+                    {/* <div className="text-center">
                         <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
                             <svg
                                 className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
@@ -240,8 +271,8 @@ export const Home = () => {
                         <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
                             Sport
                         </h6>
-                    </div>
-                    <div className="text-center">
+                    </div> */}
+                    {/* <div className="text-center">
                         <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
                             <svg
                                 className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
@@ -260,8 +291,8 @@ export const Home = () => {
                         <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
                             Health
                         </h6>
-                    </div>
-                    <div className="text-center">
+                    </div> */}
+                    {/* <div className="text-center">
                         <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
                             <svg
                                 className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
@@ -280,8 +311,8 @@ export const Home = () => {
                         <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
                             Weather
                         </h6>
-                    </div>
-                    <div className="text-center">
+                    </div> */}
+                    {/* <div className="text-center">
                         <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
                             <svg
                                 className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
@@ -300,8 +331,8 @@ export const Home = () => {
                         <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
                             Time
                         </h6>
-                    </div>
-                    <div className="text-center">
+                    </div> */}
+                    {/* <div className="text-center">
                         <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
                             <svg
                                 className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
@@ -320,7 +351,7 @@ export const Home = () => {
                         <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
                             News
                         </h6>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
