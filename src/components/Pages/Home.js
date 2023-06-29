@@ -5,7 +5,7 @@ export const Home = () => {
         <div>
             <div className="relative">
                 <img
-                    src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                     className="absolute inset-0 object-cover w-full h-full"
                     alt=""
                 />
@@ -95,7 +95,7 @@ export const Home = () => {
                                         <div className="mt-4 mb-2 sm:mb-4">
                                             <button
                                                 type="submit"
-                                                className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                                className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                                             >
                                                 Subscribe
                                             </button>
@@ -111,22 +111,20 @@ export const Home = () => {
                 </div>
             </div>
 
-            {/* cards */}
 
+            {/* cards */}
             <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2 py-9 px-4">
                 <a href="/" aria-label="View Item">
                     <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                         <img
                             className="object-cover w-full h-56 md:h-64 xl:h-80"
-                            src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                            src="https://images.pexels.com/photos/9957549/pexels-photo-9957549.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
                             alt=""
                         />
                         <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                            <p className="mb-4 text-lg font-bold text-gray-100">Mona Lisa</p>
+                            <p className="mb-4 text-lg font-bold text-gray-100">Pizza</p>
                             <p className="text-sm tracking-wide text-gray-300">
-                                Painted between 1503 and 1517, Da Vinci’s alluring portrait has
-                                been dogged by two questions since the day it was made: Who’s
-                                the subject and why is she smiling?
+                                The largest pizza ever made was created in Rome, Italy, in 2012. It measured 13,580.28 square feet (1,261.65 square meters) and used 19,800 pounds (8,980 kilograms) of flour.
                             </p>
                         </div>
                     </div>
@@ -135,17 +133,15 @@ export const Home = () => {
                     <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                         <img
                             className="object-cover w-full h-56 md:h-64 xl:h-80"
-                            src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt=""
                         />
                         <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                             <p className="mb-4 text-lg font-bold text-gray-100">
-                                The Starry Night
+                                Burger
                             </p>
                             <p className="text-sm tracking-wide text-gray-300">
-                                Vincent Van Gogh’s most popular painting, The Starry Night was
-                                created by Van Gogh at the asylum in Saint-Rémy, where he’d
-                                committed himself in 1889.
+                                The invention of the cheeseburger is attributed to Lionel Sternberger, who added a slice of cheese to a hamburger in 1926 while working at his father's sandwich shop in Pasadena, California.
                             </p>
                         </div>
                     </div>
@@ -154,16 +150,13 @@ export const Home = () => {
                     <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                         <img
                             className="object-cover w-full h-56 md:h-64 xl:h-80"
-                            src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            src="https://images.pexels.com/photos/7394819/pexels-photo-7394819.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt=""
                         />
                         <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                            <p className="mb-4 text-lg font-bold text-gray-100">The Kiss</p>
+                            <p className="mb-4 text-lg font-bold text-gray-100">Biryani</p>
                             <p className="text-sm tracking-wide text-gray-300">
-                                Opulently gilded and extravagantly patterned, The Kiss, Gustav
-                                Klimt’s fin-de-siècle portrayal of intimacy, is a mix of
-                                Symbolism and Vienna Jugendstil, the Austrian variant of Art
-                                Nouveau.
+                                In the Indian city of Hyderabad, biryani is considered a spiritual offering to the deity Sai Baba. Devotees prepare and distribute biryani as "prasad" (blessed food) in the Sai Baba temples.
                             </p>
                         </div>
                     </div>
@@ -172,17 +165,15 @@ export const Home = () => {
                     <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                         <img
                             className="object-cover w-full h-56 md:h-64 xl:h-80"
-                            src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            src="https://images.pexels.com/photos/14477873/pexels-photo-14477873.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt=""
                         />
                         <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                             <p className="mb-4 text-lg font-bold text-gray-100">
-                                The Harvesters
+                                Samosa
                             </p>
                             <p className="text-sm tracking-wide text-gray-300">
-                                Bruegel’s fanfare for the common man is considered one of the
-                                defining works of Western art. This composition was one of six
-                                created on the theme of the seasons.
+                                September 5th is celebrated as "World Samosa Day" to honor this beloved snack. It's a day dedicated to enjoying and celebrating the flavors and diversity of samosas.
                             </p>
                         </div>
                     </div>
@@ -192,9 +183,9 @@ export const Home = () => {
                 <a
                     href="/"
                     aria-label=""
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                    className="inline-flex items-center font-semibold transition-colors duration-200 text-red-600 hover:text-red-900"
                 >
-                    View gallery
+                    Order Now
                     <svg
                         className="inline-block w-3 ml-2"
                         fill="currentColor"
