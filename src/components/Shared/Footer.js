@@ -15,7 +15,7 @@ export const Footer = () => {
                         />
                         <div className="flex flex-col justify-center mt-2">
                             <p className="text-white font-bold">Ritik Raj</p>
-                            <p className="mb-4 text-xs text-white">Backend Developer</p>
+                            <p className="mb-4 text-xs text-white">Full Stack Developer</p>
                             <p className="text-sm tracking-wide text-white">
                                 Secondary fermentation degrees plato units of bitterness, cask
                                 conditioned ale ibu real ale pint glass craft beer. krausen goblet
@@ -31,7 +31,7 @@ export const Footer = () => {
                         />
                         <div className="flex flex-col justify-center mt-2">
                             <p className="text-white font-bold">Mansi</p>
-                            <p className="mb-4 text-xs text-white">Frontend Developer</p>
+                            <p className="mb-4 text-xs text-white">Full Stack Developer</p>
                             <p className="text-sm tracking-wide text-white">
                                 I just closed my eyes and in a nanosecond I cured myself from this
                                 ridiculous model of disease, addiction and obsession.
@@ -58,8 +58,7 @@ export const Footer = () => {
                             </button>
                         </form>
                         <p className="mt-4 text-sm text-white">
-                            Bacon ipsum dolor amet short ribs pig sausage prosciuto chicken
-                            spare ribs salami.
+                            We respect your privacy. Unsubscribe at any time.
                         </p>
                     </div>
 

@@ -38,7 +38,9 @@ export const Home = () => {
                                     </svg>
                                 </a>
                             </div>
-                            <div className="sc-hgzKov iLvTSD relative mx-auto text-gray-600 lg:block hidden">
+
+                            {/* search bar */}
+                            <div className="relative mx-auto text-gray-600 lg:block hidden">
                                 <input className="border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none" type="search" name="search" placeholder="Search" />
                                 <button type="submit" className="absolute right-0 top-0 mt-3 mr-2">
                                     <svg className="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style={{ enableBackground: 'new 0 0 56.966 56.966' }} xmlSpace="preserve" width="512px" height="512px">
@@ -209,36 +211,80 @@ export const Home = () => {
             {/* Variety */}
             <div className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                 <div className="grid grid-cols-2 gap-7 row-gap-5 sm:grid-cols-3 lg:grid-cols-6">
-                    <img
-                        className="object-cover w-24 h-24 rounded-full shadow"
-                        src="https://images.pexels.com/photos/1460872/pexels-photo-1460872.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt="Person"
-                    />
-                    <img
-                        className="object-cover w-24 h-24 rounded-full shadow"
-                        src="https://images.pexels.com/photos/4394612/pexels-photo-4394612.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt="Person"
-                    />
-                    <img
-                        className="object-cover w-24 h-24 rounded-full shadow"
-                        src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt="Person"
-                    />
-                    <img
-                        className="object-cover w-24 h-24 rounded-full shadow"
-                        src="https://images.pexels.com/photos/4403082/pexels-photo-4403082.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt="Person"
-                    />
-                    <img
-                        className="object-cover w-24 h-24 rounded-full shadow"
-                        src="https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt="Person"
-                    />
-                    <img
-                        className="object-cover w-24 h-24 rounded-full shadow"
-                        src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt="Person"
-                    />
+                    <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl w-24 h-24 rounded-full shadow">
+                        <img
+                            className="object-cover w-24 h-24 rounded-full shadow"
+                            src="https://images.pexels.com/photos/1460872/pexels-photo-1460872.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            alt="Person"
+                        />
+                        <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                            <p className="mb-4 text-lg font-bold text-gray-100">
+                                Pasta
+                            </p>
+                        </div>
+                    </div>
+                    <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl w-24 h-24 rounded-full shadow">
+                        <img
+                            className="object-cover w-24 h-24 rounded-full shadow"
+                            src="https://images.pexels.com/photos/4394612/pexels-photo-4394612.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            alt="Person"
+                        />
+                        <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                            <p className="mb-4 text-lg font-bold text-gray-100">
+                                Pizza
+                            </p>
+                        </div>
+                    </div>
+                    <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl w-24 h-24 rounded-full shadow">
+                        <img
+                            className="object-cover w-24 h-24 rounded-full shadow"
+                            src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            alt="Person"
+                        />
+                        <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                            <p className="mb-4 text-lg font-bold text-gray-100">
+                                Burger
+                            </p>
+                        </div>
+                    </div>
+                    <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl w-24 h-24 rounded-full shadow">
+                        <img
+                            className="object-cover w-24 h-24 rounded-full shadow"
+                            src="https://images.pexels.com/photos/4403082/pexels-photo-4403082.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            alt="Person"
+                        />
+                        <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                            <p className="mb-4 text-lg font-bold text-gray-100">
+                                Cake
+                            </p>
+                        </div>
+                    </div>
+                    <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl w-24 h-24 rounded-full shadow">
+                        <img
+                            className="object-cover w-24 h-24 rounded-full shadow"
+                            src="https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            alt="Person"
+                        />
+                        <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                            <p className="mb-4 text-lg font-bold text-gray-100">
+                                Dosa
+                            </p>
+                        </div>
+                    </div>
+                    <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl w-24 h-24 rounded-full shadow">
+                        <img
+                            className="object-cover w-24 h-24 rounded-full shadow"
+                            src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            alt="Person"
+                        />
+                        <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                            <p className="mb-4 text-lg font-bold text-gray-100">
+                                Coffee
+                            </p>
+                        </div>
+
+                    </div>
+
 
                     {/* <div className="text-center">
                         <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
