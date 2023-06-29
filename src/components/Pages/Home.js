@@ -13,41 +13,33 @@ export const Home = () => {
                     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                         <div className="flex flex-col items-center justify-between xl:flex-row">
                             <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-                                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                                    The quick, brown fox <br className="hidden md:block" />
-                                    jumps over a{' '}
-                                    <span className="text-teal-accent-400">lazy dog</span>
+                                <h2 className="max-w-lg mb-12 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                                    Where every <br className="hidden md:block" />
+                                    flavour{' '}
+                                    <span className="text-red-500">tells a story</span>
                                 </h2>
-                                <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                    accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                                    quae.
+                                <p className="max-w-xl mb-12 text-base text-white md:text-lg">
+                                    From the vibrant spices of Indian cuisine to the comforting indulgence of burgers, the awakening aroma of coffee, the joy embodied in pizza, the celebratory sweetness of cakes to the  the syrupy bliss of a rasgulla, each flavor tells a unique story that delights the senses.
                                 </p>
                                 <a
                                     href="/"
-                                    aria-label=""
-                                    className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
+                                    class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-red-500 hover:bg-white hover:text-red-800 hover:border-4 border-red-600 focus:shadow-outline focus:outline-none "
+                                    aria-label="Order now"
+                                    title="Order now"
                                 >
-                                    Learn more
-                                    <svg
-                                        className="inline-block w-3 ml-2"
-                                        fill="currentColor"
-                                        viewBox="0 0 12 12"
-                                    >
-                                        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                                    </svg>
+                                    Order now
                                 </a>
                             </div>
 
                             {/* search bar */}
-                            <div className="relative mx-auto text-gray-600 lg:block hidden">
+                            {/* <div className="relative mx-auto text-gray-600 lg:block hidden">
                                 <input className="border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none" type="search" name="search" placeholder="Search" />
                                 <button type="submit" className="absolute right-0 top-0 mt-3 mr-2">
                                     <svg className="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style={{ enableBackground: 'new 0 0 56.966 56.966' }} xmlSpace="preserve" width="512px" height="512px">
                                         <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
                                     </svg>
                                 </button>
-                            </div>
+                            </div> */}
                             {/* <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
                                 <div className="bg-white rounded shadow-2xl p-7 sm:p-10">
                                     <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
@@ -193,11 +185,11 @@ export const Home = () => {
                 <a
                     href="/"
                     aria-label=""
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-red-600 hover:text-red-900"
+                    className="inline-flex items-center font-semibold transition-colors duration-200 text-red-600 hover:text-red-900 text-xl"
                 >
-                    Order Now
+                    View Gallery
                     <svg
-                        className="inline-block w-3 ml-2"
+                        className="inline-block w-4 ml-2"
                         fill="currentColor"
                         viewBox="0 0 12 12"
                     >
