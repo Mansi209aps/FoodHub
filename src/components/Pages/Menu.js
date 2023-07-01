@@ -1,8 +1,12 @@
 import React from 'react'
+import { Navbar } from '../Shared/Navbar'
 
-const Menu = () => {
+const Menu = ({ product, onAddToCart }) => {
     return (
-        <div>Menu</div>
+        <div>
+            <Navbar />
+
+        </div>
     )
 }
 
