@@ -266,7 +266,7 @@ const Gallery = () => {
             {/* cart */}
             <div className="text-end mb-7 mx-10">
                 <a
-                    href="/ordernow"
+                    href="/cart"
                     className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-red-500 hover:bg-white hover:text-red-800 hover:border-4 border-red-600 focus:shadow-outline focus:outline-none "
                     aria-label="Order now"
                     title="Order now"
