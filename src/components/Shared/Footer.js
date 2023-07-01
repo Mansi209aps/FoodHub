@@ -52,7 +52,7 @@ export const Footer = () => {
                             />
                             <button
                                 type="submit"
-                                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-red-600 bg-white hover:bg-red-800 hover:text-white focus:shadow-outline focus:outline-none"
+                                className="inline-flex items-center justify-center h-12 px-5 font-medium tracking-wide text-red-600 transition duration-200 rounded shadow-md bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
                             >
                                 Subscribe
                             </button>
