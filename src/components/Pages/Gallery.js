@@ -9,7 +9,7 @@ const Gallery = () => {
             <Navbar />
 
             {/* cards */}
-            <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2 py-9 px-4">
+            <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2 pt-9 px-4">
                 <div>
 
 
@@ -31,8 +31,6 @@ const Gallery = () => {
                     <Card />
                 </div>
                 <div>
-
-
                     <a href="/" aria-label="View Item">
                         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                             <img
@@ -95,7 +93,9 @@ const Gallery = () => {
                     <Card />
                 </div>
             </div>
-            <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2 py-2 px-4">
+
+            {/* 2nd row */}
+            <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2 pt-7 px-4">
                 <div>
 
 
@@ -158,9 +158,8 @@ const Gallery = () => {
                     </a>
                     <Card />
                 </div>
+
                 <div >
-
-
                     <a href="/" aria-label="View Item">
                         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                             <img
@@ -181,10 +180,10 @@ const Gallery = () => {
                     <Card />
                 </div>
             </div>
-            <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2 py-9 px-4">
+
+            {/* 3rd row */}
+            <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2 pt-7 px-4">
                 <div>
-
-
                     <a href="/" aria-label="View Item">
                         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                             <img
@@ -203,8 +202,6 @@ const Gallery = () => {
                     <Card />
                 </div>
                 <div>
-
-
                     <a href="/" aria-label="View Item">
                         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                             <img
@@ -225,8 +222,6 @@ const Gallery = () => {
                     <Card />
                 </div>
                 <div>
-
-
                     <a href="/" aria-label="View Item">
                         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                             <img
@@ -267,6 +262,26 @@ const Gallery = () => {
                     <Card />
                 </div>
             </div>
+
+            {/* cart */}
+            <div className="text-end mb-7 mx-10">
+                <a
+                    href="/ordernow"
+                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-red-500 hover:bg-white hover:text-red-800 hover:border-4 border-red-600 focus:shadow-outline focus:outline-none "
+                    aria-label="Order now"
+                    title="Order now"
+                >
+                    Next
+                    <svg
+                        className=" w-4 ml-2"
+                        fill="currentColor"
+                        viewBox="0 0 12 12"
+                    >
+                        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                    </svg>
+                </a>
+            </div>
+
 
             <Footer />
         </div>
