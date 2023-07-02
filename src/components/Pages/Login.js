@@ -39,7 +39,7 @@ export const Login = () => {
                                         Password
                                     </label>
                                     <div className="text-sm">
-                                        <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                                        <a href="/" className="font-semibold text-indigo-600 hover:text-indigo-500">
                                             Forgot password?
                                         </a>
                                     </div>
@@ -59,7 +59,7 @@ export const Login = () => {
                             <div>
                                 <button
                                     type="submit"
-                                    className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-red-500 hover:bg-white hover:text-red-800 hover:border-4 border-red-600 focus:shadow-outline focus:outline-none "
                                 >
                                     Sign in
                                 </button>
@@ -68,7 +68,7 @@ export const Login = () => {
 
                         <p className="mt-10 text-center text-sm text-gray-500">
                             Not a member?{' '}
-                            <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                            <a href="/" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                                 Start a 14 day free trial
                             </a>
                         </p>

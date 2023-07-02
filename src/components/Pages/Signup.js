@@ -19,7 +19,14 @@ const Signup = () => {
                         <label htmlFor="password">Password:</label>
                         <input type="password" id="password" name="password" placeholder="Enter your password" />
                     </div>
-                    <button type="submit">Sign Up</button>
+                    <a
+                        href="/"
+                        class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-red-500 hover:bg-white hover:text-red-800 hover:border-4 border-red-600 focus:shadow-outline focus:outline-none "
+                        aria-label="Sign up"
+                        title="Sign up"
+                    >
+                        Sign up
+                    </a>
                 </form>
             </div>
             <div className="image-container ">
