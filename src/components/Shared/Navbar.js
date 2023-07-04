@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaShoppingCart } from 'react-icons/fa'
 import logo from '../images/logo.png'
+
+
 export const Navbar = () => {
-    // const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         // Navbar of website
@@ -96,9 +99,14 @@ export const Navbar = () => {
                                 Sign up
                             </a>
                         </li>
+                        <li>
+                            <a href="/cart" className="font-semibold leading-6 text-white hover:text-indigo-500">
+                                <FaShoppingCart className="text-4xl" />
+                            </a>
+                        </li>
                     </ul>
 
-                    {/* <div class="lg:hidden">
+                    <div class="lg:hidden">
                         <button
                             aria-label="Open Menu"
                             title="Open Menu"
@@ -222,12 +230,12 @@ export const Navbar = () => {
                                         </ul>
                                     </nav>
                                 </div>
-                            </div> */}
-
-                    {/* )} */}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
-        </div>
-        // </div >
+        </div >
+
     );
-};
+}
