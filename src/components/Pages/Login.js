@@ -86,7 +86,7 @@ export const Login = () => {
 
         // </div>
         <div className="flex">
-            <div className="w-1/2  p-12">
+            <div className="w-1/2  px-12 pt-8">
                 <div className="flex px-10 bg-gray-300 py-8 lg:px-8">
                     {/* <div className="sm:mx-auto sm:w-full sm:max-w-sm"> */}
                     <div className="mt-10 sm:mx-8 sm:w-full sm:max-w-sm">
