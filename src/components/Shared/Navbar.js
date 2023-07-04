@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import { FaShoppingCart } from 'react-icons/fa'
 import logo from '../images/logo.png'
+
+
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -94,6 +97,11 @@ export const Navbar = () => {
                                 title="Sign up"
                             >
                                 Sign up
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/cart" className="font-semibold leading-6 text-white hover:text-indigo-500">
+                                <FaShoppingCart className="text-4xl" />
                             </a>
                         </li>
                     </ul>
@@ -227,7 +235,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
     );
 }

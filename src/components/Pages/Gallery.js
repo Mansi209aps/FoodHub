@@ -281,8 +281,6 @@ const Gallery = () => {
                     </svg>
                 </a>
             </div>
-
-
             <Footer />
         </div>
     )
