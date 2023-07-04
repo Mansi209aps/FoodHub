@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../images/logo.png'
 export const Navbar = () => {
-    // const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         // Navbar of website
@@ -98,7 +98,7 @@ export const Navbar = () => {
                         </li>
                     </ul>
 
-                    {/* <div class="lg:hidden">
+                    <div class="lg:hidden">
                         <button
                             aria-label="Open Menu"
                             title="Open Menu"
@@ -222,12 +222,12 @@ export const Navbar = () => {
                                         </ul>
                                     </nav>
                                 </div>
-                            </div> */}
-
-                    {/* )} */}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
-        // </div >
+
     );
-};
+}
