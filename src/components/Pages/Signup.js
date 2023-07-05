@@ -1,7 +1,37 @@
-import React from 'react';
-import './Signup.css'; // Import the CSS file for styling
+import React, { useState } from 'react';
+import './Signup.css';
 
 const Signup = () => {
+
+    const [credentials, setCredentials] = useState({ name: "", email: "", password: "" })
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const response = await fetch("http://localhost:5000/api/signup", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: credentials.name,
+                email: credentials.email,
+                password: credentials.password
+            })
+        })
+        const json = await response.json()
+        console.log(json)
+
+        if (!json.success) {
+            alert("Enter Valid Credentials")
+        }
+    }
+
+    const onChange = (event) => {
+        setCredentials({ ...credentials, [event.target.name]: event.target.value })
+    }
+
+
     return (
         <div className="flex">
             <div className="w-1/2  px-12 pt-4">
@@ -13,8 +43,7 @@ const Signup = () => {
                             </h2>
                         </div>
 
-
-                        <form className="space-y-7" action="#" method="POST">
+                        <form className="space-y-7" action="#" method="POST" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className="block text-lg font-medium leading-6 text-black">
                                     Username
@@ -23,6 +52,8 @@ const Signup = () => {
                                     <input
                                         id="name"
                                         name="name"
+                                        value={credentials.name}
+                                        onChange={onChange}
                                         type="name"
                                         autoComplete="name"
                                         required
@@ -40,7 +71,9 @@ const Signup = () => {
                                     <input
                                         id="email"
                                         name="email"
+                                        value={credentials.email}
                                         type="email"
+                                        onChange={onChange}
                                         autoComplete="email"
                                         required
                                         placeholder="Enter your email id"
@@ -64,6 +97,8 @@ const Signup = () => {
                                     <input
                                         id="password"
                                         name="password"
+                                        value={credentials.password}
+                                        onChange={onChange}
                                         type="password"
                                         autoComplete="current-password"
                                         required
@@ -78,7 +113,7 @@ const Signup = () => {
                                     type="submit"
                                     className="w-full rounded-md bg-red-600  py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
-                                    Sign in
+                                    Sign up
                                 </button>
                             </div>
                         </form>
@@ -86,7 +121,7 @@ const Signup = () => {
                         <p className="mt-10 text-center text-sm text-gray-500">
                             Already a member?{' '}
                             <a href="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-                                Signin
+                                Login
                             </a>
                         </p>
                     </div>

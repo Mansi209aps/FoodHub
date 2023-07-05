@@ -212,3 +212,5 @@ export const Cart = () => {
 
     )
 }
+
+export default products
