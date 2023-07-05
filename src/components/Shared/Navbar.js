@@ -1,11 +1,18 @@
 import React, { useState } from "react";
-import { FaShoppingCart } from 'react-icons/fa'
+import { FaShoppingCart } from 'react-icons/fa';
+import { useNavigate } from "react-router-dom";
 import logo from '../images/logo.png'
+
 
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const navigate = useNavigate();
+    const handleLogout = () => {
+        localStorage.removeItem("authToken");
+        navigate("/");
+    }
     return (
         // Navbar of website
         <div class="bg-red-600">
@@ -76,35 +83,74 @@ export const Navbar = () => {
 
                             </div>
                         </li>
-
-                        <li>
-                            <a
-                                href="/login"
-                                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-red-600 bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
-                                aria-label="Login"
-                                title="Login"
-                            >
-                                Login
-                            </a>
-                        </li>
-
-
-                        <li>
-                            <a
-                                href="/signup"
-                                class="inline-flex items-center justify-center h-12 px-5 font-medium tracking-wide text-red-600 transition duration-200 rounded shadow-md bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
-                                aria-label="Sign up"
-                                title="Sign up"
-                            >
-                                Sign up
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/cart" className="font-semibold leading-6 text-white hover:text-indigo-500">
-                                <FaShoppingCart className="text-4xl" />
-                            </a>
-                        </li>
                     </ul>
+
+                    {(localStorage.getItem("authToken")) ?
+                        <div className="flex">
+                            <li>
+                                <a
+                                    href="/login"
+                                    class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-red-600 bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
+                                    aria-label="Login"
+                                    title="Login"
+                                >
+                                    Logout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cart" className="font-semibold leading-6 text-white hover:text-indigo-500">
+                                    <FaShoppingCart className="text-4xl" />
+                                </a>
+                            </li>
+                        </div>
+                        : " "}
+
+
+                    {(!localStorage.getItem("authToken")) ?
+                        <div className="flex">
+                            <div className="h-12 px-2">
+                                <a
+                                    href="/login"
+                                    class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-red-600 bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
+                                    aria-label="Login"
+                                    title="Login"
+                                >
+                                    Login
+                                </a>
+                            </div>
+
+                            <div className="px-2">
+                                <a
+                                    href="/signup"
+                                    class="inline-flex items-center justify-center h-12 px-5 font-medium tracking-wide text-red-600 transition duration-200 rounded shadow-md bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
+                                    aria-label="Sign up"
+                                    title="Sign up"
+                                >
+                                    Sign up
+                                </a>
+                            </div>
+
+                        </div>
+                        :
+                        <div className="flex">
+                            <div className="px-2">
+                                <a href="/cart" className="font-semibold leading-6 text-white hover:text-indigo-500">
+                                    <FaShoppingCart className="text-4xl" />
+                                </a>
+                            </div>
+                            <div className="px-2" onClick={handleLogout}>
+                                <a
+                                    href="/login"
+                                    class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-red-600 bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
+                                    aria-label="Login"
+                                    title="Login"
+                                >
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                    }
+                    {/* </ul> */}
 
                     <div class="lg:hidden">
                         <button
