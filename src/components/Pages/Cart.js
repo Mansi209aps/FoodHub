@@ -1,6 +1,7 @@
-import React from "react"
-import { Navbar } from "../Shared/Navbar"
-import Counter from "../Shared/Counter"
+import React from "react";
+import { Navbar } from "../Shared/Navbar";
+import Counter from "../Shared/Counter";
+import { Footer } from "../Shared/Footer";
 
 const products = [
     {
@@ -186,7 +187,7 @@ export const Cart = () => {
                         </div>
                     </div>
                 </div>
-                <div className="text-end">
+                <div className="text-end pb-5 pt-0 pr-12">
                     <a
                         href="/cart"
                         className="inline-flex items-center justify-center h-12 px-3 mx-4 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-red-700 hover:bg-white hover:text-red-800 hover:border-4 border-red-600 focus:shadow-outline focus:outline-none "
@@ -204,7 +205,7 @@ export const Cart = () => {
                     </a>
                 </div>
                 {/* <NewsLetter /> */}
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </div>
 

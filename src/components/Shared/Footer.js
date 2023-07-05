@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from '../images/DSC_1013016.jpg'
 import img2 from '../images/DSC_1013016a.jpg'
+
 export const Footer = () => {
     return (
         <div>
