@@ -6,6 +6,7 @@ import Menu from './components/Pages/Menu';
 import { Cart } from './components/Pages/Cart';
 import { Login } from './components/Pages/Login';
 import Signup from './components/Pages/Signup';
+import CartItem from './components/Shared/CartItem';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/gallery' element={<Gallery />} />
           <Route exact path='/ordernow' element={<Menu />} />
-          <Route exact path='/cart' element={<Cart />} />
+          <Route exact path='/cart' element={<CartItem />} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
         </Routes>
