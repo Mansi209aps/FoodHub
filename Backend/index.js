@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.use('/api', require("./Routes/CreateUser"))
+app.use('/api', require("./Routes/Auth"))
 
 
 mongoose

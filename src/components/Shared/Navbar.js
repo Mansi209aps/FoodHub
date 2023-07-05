@@ -85,7 +85,7 @@ export const Navbar = () => {
                         </li>
                     </ul>
 
-                    {(localStorage.getItem("authToken")) ?
+                    {/* {(localStorage.getItem("authToken")) ?
                         <div className="flex">
                             <li>
                                 <a
@@ -103,7 +103,7 @@ export const Navbar = () => {
                                 </a>
                             </li>
                         </div>
-                        : " "}
+                        : " "} */}
 
 
                     {(!localStorage.getItem("authToken")) ?
@@ -140,7 +140,7 @@ export const Navbar = () => {
                             </div>
                             <div className="px-2" onClick={handleLogout}>
                                 <a
-                                    href="/login"
+                                    href="/"
                                     class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-red-600 bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
                                     aria-label="Login"
                                     title="Login"
