@@ -27,7 +27,7 @@ app.use('/api', require("./Routes/Auth"))
 
 mongoose
     .connect(
-        `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.01byp2c.mongodb.net/foodhubdb?retryWrites=true&w=majority`
+        `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.mpyvqgy.mongodb.net/foodhubdb?retryWrites=true&w=majority`
     )
     .then(() => {
         app.listen(5000);
