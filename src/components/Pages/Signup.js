@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import './Signup.css';
 
 const Signup = () => {
 
     const [credentials, setCredentials] = useState({ name: "", email: "", password: "" })
+
+    let navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -24,6 +28,11 @@ const Signup = () => {
 
         if (!json.success) {
             alert("Enter Valid Credentials")
+        }
+        if (json.success) {
+            // localStorage.setItem("authToken", json.authToken)
+            // console.log(localStorage.getItem("authToken"))
+            navigate('/login');
         }
     }
 
