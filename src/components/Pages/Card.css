@@ -1,0 +1,26 @@
+.food-card {
+    border: 1px solid #f3ecec;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 2px 4px;
+    margin: 0 5px;
+    border: none;
+    background-color: #ed4747;
+    cursor: pointer;
+}
+
+span {
+    font-weight: bold;
+    margin: 0 5px;
+}
