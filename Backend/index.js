@@ -17,13 +17,12 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use(express.json())
+app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.use('/api', require("./Routes/Auth"))
-
+app.use('/api', require("./Routes/Auth"));
 
 mongoose
     .connect(
