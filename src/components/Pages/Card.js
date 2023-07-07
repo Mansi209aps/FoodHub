@@ -17,7 +17,7 @@ const Card = () => {
     return (
         <div className="food-card">
             <p>Total Price</p>
-            <select className='m-2 h-100 bg-success rounded'>
+            <select className='m-2 h-100 rounded'>
                 <option value="half">Half</option>
                 <option value="full">Full</option>
             </select>
