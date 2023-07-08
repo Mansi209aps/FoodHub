@@ -187,11 +187,11 @@ export const Home = () => {
             </div>
             <div className="text-center">
                 <a
-                    href="/gallery"
+                    href="/ordernow"
                     aria-label=""
                     className="inline-flex items-center font-semibold transition-colors duration-200 text-red-600 hover:text-red-900 text-xl"
                 >
-                    View Gallery
+                    Order Now
                     <svg
                         className="inline-block w-4 ml-2"
                         fill="currentColor"
