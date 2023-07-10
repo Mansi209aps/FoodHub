@@ -8,6 +8,7 @@ import Signup from './components/Pages/Signup';
 import { CartItem } from './components/Shared/CartItem';
 import { CartProvider } from 'react-use-cart';
 import { Footer } from './components/Shared/Footer';
+import ChoosePaymentMethod from './components/Pages/ChoosePaymentMethod';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           } />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
+          <Route exact path='/paymentmethod' element={<ChoosePaymentMethod />} />
         </Routes>
       </BrowserRouter>
     </>

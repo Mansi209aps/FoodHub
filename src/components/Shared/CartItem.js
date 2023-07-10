@@ -50,6 +50,7 @@ import { useCart } from 'react-use-cart';
 
 export const CartItem = (props) => {
     const { addItem } = useCart();
+    const { removeItem } = useCart();
 
     return (
         <div className='pb-5'>
@@ -78,10 +79,15 @@ export const CartItem = (props) => {
                 </select>
 
                 <div className="quantity-container">
-                    <button
+                    <button className='mx-2'
                         onClick={() => addItem(props.item)}
                     >
                         +
+                    </button>
+                    <button
+                        onClick={() => removeItem(props.item)}
+                    >
+                        -
                     </button>
                 </div>
             </div>
