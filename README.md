@@ -6,112 +6,91 @@ FoodHub is a full-stack web application built using the MERN (MongoDB, Express.j
 
 ## Features
 
-### User Registration and Authentication:
-Users can sign up and log in to the application to access their personalized account.
+- ### User Registration and Authentication:
+  Users can sign up and log in to the application to access their personalized account.
 
-### Food Menu: 
-Menu, showcasing the available food items and their prices.
+- ### Food Menu:
+  Menu, showcasing the available food items and their prices.
 
-### Cart Functionality: 
-Users can add or remove food items from their cart as per their requirements.
+- ### Cart Functionality: 
+  Users can add or remove food items from their cart as per their requirements.
 
-### Order Placement:
-Users can place orders, specifying the desired items and quantities.
+- ### Order Placement:
+  Users can place orders, specifying the desired items and quantities.  
 
 ## Installation
 
 1. Clone the repository:
 
-   ### `git clone https://github.com/your-username/foodhub.git`
+   ```
+   git clone https://github.com/your-username/foodhub.git
+   ```
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
 
-   ### `cd foodhub`
+   ```
+   cd foodhub
+   ```
 
-3. Install the dependencies for both the backend and frontend:
+4. Install the dependencies for both the backend and frontend:
 
-   ### `cd backend && npm install
-   ### cd ../frontend && npm install`
+   ```
+   cd backend && npm install
+   ```
+   ```
+   cd ../frontend && npm install
+   ```
 
-4. Set up environment variables:
+6. Set up environment variables:
 
-Create a .env file in the backend directory.
-Add the following variables to the .env file:
+  - Create a .env file in the backend directory.
+  - Add the following variables to the .env file:
 
-   ### `PORT=5000`
-  ### `MONGO_URI=<your-mongodb-connection-string>`
-   ### `JWT_SECRET=<your-jwt-secret>`
+   ```
+   PORT=5000
+   MONGO_URI=<your-mongodb-connection-string>
+   JWT_SECRET=<your-jwt-secret>
+   ```
 
 5. Start the backend server:
 
-   ### `cd backend && npm start`
+   ```
+   cd backend && npm start
+   ```
 
-6. Start the frontend development server:
+5. Start the frontend development server:
 
-   ### `cd frontend && npm start`
+   ```
+   cd frontend && npm start
+   ```
 
 7. Access the application by visiting `http://localhost:3000` in your web browser.
 
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ### Backend:
+ - Node.js
+ - Express.js
+ - Postman
+ - MongoDB (with Mongoose)
+ - JWT (JSON Web Tokens) for authentication
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ### Frontend:
+ - React.js
+ - Redux (for state management)
+ - Axios (for API requests)
+ - React Router (for routing)
+ - Material-UI (for UI components)
 
-### `npm test`
+## Contributing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contributions to FoodHub are always welcome! If you find any issues or would like to suggest improvements, please create a new issue or submit a pull request.
 
-### `npm run build`
+## Acknowledgements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+FoodHub is developed as a learning project, and it wouldn't have been possible without the valuable resources and tutorials available online. Special thanks to the open-source community for their contributions and the MERN stack creators.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you have any questions or feedback, feel free to contact us at [mansisharma209aps@gmail.com](mailto:mansisharma209aps@gmail.com) or [ritikraj2358@outlook.com](mailto:ritikraj2358@outlook.com).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy using FoodHub!
