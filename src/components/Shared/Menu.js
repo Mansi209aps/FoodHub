@@ -12,7 +12,7 @@ const Menu = {
             img: "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
             title: 'Pav Bhaji',
             desc: ' Pav Bhaji originated in the 1850s as a quick and filling lunch option for textile mill workers in Mumbai. It was created by street vendors using leftover vegetables and bread.',
-            price: 46,
+            price: 96,
         },
         {
             id: 3,
