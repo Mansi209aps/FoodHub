@@ -51,7 +51,6 @@ import { useCart } from 'react-use-cart';
 export const CartItem = (props) => {
     const { addItem } = useCart();
     const { removeItem } = useCart();
-
     return (
         <div className='pb-5'>
             <div a href="/" aria-label="View Item">
@@ -71,24 +70,27 @@ export const CartItem = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="food-card">
-                <p>{props.price}</p>
-                <select className='m-2 h-100 rounded'>
-                    <option value="half">Half</option>
-                    <option value="full">Full</option>
-                </select>
+            <div className="food-card my-3">
+                <div className='inline-flex'>
+                    <div className='text-2xl'>₹{props.price}</div>
+                    <select className='mx-3 h-100 rounded'>
+                        <option value="half">Half</option>
+                        <option value="full">Full</option>
+                    </select>
 
-                <div className="quantity-container">
-                    <button className='mx-2'
-                        onClick={() => addItem(props.item)}
-                    >
-                        +
-                    </button>
-                    <button
-                        onClick={() => removeItem(props.item)}
-                    >
-                        -
-                    </button>
+                    <div className="quantity-container ml-12">
+                        <button className='mx-3 px-3 py-2 bg-red-600 hover:bg-red-300'
+                            onClick={() => addItem(props.item)}
+                        >
+                            +
+                        </button>
+                        {/* <div>{items.quantity}</div> */}
+                        <button className='mx-3 px-3.5 py-2 bg-red-600 hover:bg-red-300'
+                            onClick={() => removeItem(props.item)}
+                        >
+                            -
+                        </button>
+                    </div>
                 </div>
             </div>
 
