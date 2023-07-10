@@ -1,10 +1,57 @@
-# Getting Started with Create React App
+# FoodHub - MERN Stack Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FoodHub is a full-stack web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It allows users to discover and order various food items listed by FoodHub.
 
-## Available Scripts
+<img width="960" alt="image" src="https://github.com/Mansi209aps/FoodHub/assets/78530251/855d48c1-5db5-40df-9568-255afaa34d0a">
 
-In the project directory, you can run:
+## Features
+
+### User Registration and Authentication:
+Users can sign up and log in to the application to access their personalized account.
+
+### Food Menu: 
+Menu, showcasing the available food items and their prices.
+
+### Cart Functionality: 
+Users can add or remove food items from their cart as per their requirements.
+
+### Order Placement:
+Users can place orders, specifying the desired items and quantities.
+
+## Installation
+
+1. Clone the repository:
+
+   ### `git clone https://github.com/your-username/foodhub.git`
+
+2. Navigate to the project directory:
+
+   ### `cd foodhub`
+
+3. Install the dependencies for both the backend and frontend:
+
+   ### `cd backend && npm install
+   ### cd ../frontend && npm install`
+
+4. Set up environment variables:
+
+Create a .env file in the backend directory.
+Add the following variables to the .env file:
+
+   ### `PORT=5000`
+  ### `MONGO_URI=<your-mongodb-connection-string>`
+   ### `JWT_SECRET=<your-jwt-secret>`
+
+5. Start the backend server:
+
+   ### `cd backend && npm start`
+
+6. Start the frontend development server:
+
+   ### `cd frontend && npm start`
+
+7. Access the application by visiting `http://localhost:3000` in your web browser.
+
 
 ### `npm start`
 
