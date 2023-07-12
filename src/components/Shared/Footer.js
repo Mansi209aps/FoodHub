@@ -34,8 +34,7 @@ export const Footer = () => {
                             <p className="text-white font-bold">Mansi</p>
                             <p className="mb-4 text-xs text-white">Full Stack Developer</p>
                             <p className="text-sm tracking-wide text-white">
-                                I just closed my eyes and in a nanosecond I cured myself from this
-                                ridiculous model of disease, addiction and obsession.
+                                I am a motivated 4th year B.E. student with a passion for MERN stack development. I possess strong leadership skills, effective time management abilities, and excel in collaborative team environments.
                             </p>
                         </div>
 
