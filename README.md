@@ -26,13 +26,13 @@ FoodHub is a full-stack web application built using the MERN (MongoDB, Express.j
    git clone https://github.com/your-username/foodhub.git
    ```
 
-3. Navigate to the project directory:
+2. Navigate to the project directory:
 
    ```
    cd foodhub
    ```
 
-4. Install the dependencies for both the backend and frontend:
+3. Install the dependencies for both the backend and frontend:
 
    ```
    cd backend && npm install
@@ -41,16 +41,16 @@ FoodHub is a full-stack web application built using the MERN (MongoDB, Express.j
    cd ../frontend && npm install
    ```
 
-6. Set up environment variables:
+4. Set up environment variables:
 
   - Create a .env file in the backend directory.
   - Add the following variables to the .env file:
 
-   ```
-   PORT=5000
-   MONGO_URI=<your-mongodb-connection-string>
-   JWT_SECRET=<your-jwt-secret>
-   ```
+     ```
+     PORT=5000
+     MONGO_URI=<your-mongodb-connection-string>
+     JWT_SECRET=<your-jwt-secret>
+     ```
 
 5. Start the backend server:
 
@@ -64,7 +64,7 @@ FoodHub is a full-stack web application built using the MERN (MongoDB, Express.j
    cd frontend && npm start
    ```
 
-7. Access the application by visiting `http://localhost:3000` in your web browser.
+6. Access the application by visiting `http://localhost:3000` in your web browser.
 
 
 ## Technologies Used
