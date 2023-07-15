@@ -46,7 +46,7 @@ export const Login = () => {
                     {/* <div className="sm:mx-auto sm:w-full sm:max-w-sm"> */}
                     <div className="mt-10 sm:mx-8 sm:w-full sm:max-w-sm">
                         <h2 className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm mb-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                            Sign in to your account
+                            Login to your account
                         </h2>
                         {/* </div> */}
 
@@ -100,7 +100,7 @@ export const Login = () => {
                                     type="submit"
                                     className="w-full rounded-md bg-red-600  py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
-                                    Sign in
+                                    Login
                                 </button>
                             </div>
                         </form>

@@ -1,64 +1,99 @@
-// import React, { useState } from "react";
-// // import FormatPrice from "../Helpers/FormatPrice";
-// // import CartAmountToggle from "./CartAmountToggle";
-// import { FaTrash } from "react-icons/fa";
-// import { useCartContext } from "../../Context/Cartcontext";
+// import React from 'react';
+// import { useCart } from 'react-use-cart';
 
-// const CartItem = ({ id, name, image, color, price, amount }) => {
-//     const { removeItem, setDecrease, setIncrement } = useCartContext();
-
-//     // const setDecrease = () => {
-//     //   amount > 1 ? setAmounts(amount - 1) : setAmounts(1);
-//     // };
-
-//     // const setIncrease = () => {
-//     //   amount < stock ? setAmounts(amount + 1) : setAmounts(stock);
-//     // };
-
+// export const CartItem = (props) => {
+//     const { addItem } = useCart();
 //     return (
-//         <div className="cart_heading grid grid-five-column">
-//             <div className="cart-image--name">
-//                 <div>
-//                     <figure>
-//                         <img src={image} alt={id} />
-//                     </figure>
-//                 </div>
-//                 <div>
-//                     <p>{name}</p>
-//                     <div className="color-div">
-//                         <p>color:</p>
-//                         <div
-//                             className="color-style"
-//                             style={{ backgroundColor: color, color: color }}></div>
+//         <div className='pb-5'>
+//             <div a href="/" aria-label="View Item" >
+//                 <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+//                     <img
+//                         className="object-cover w-full h-56 md:h-64 xl:h-80"
+//                         src={props.img}
+//                         alt=""
+//                     />
+//                     <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+//                         <p className="mb-4 text-lg font-bold text-gray-100">
+//                             {props.title}
+//                         </p>
+//                         <p className="text-sm tracking-wide text-gray-300">
+//                             {props.desc}
+//                             {props.price}
+//                         </p>
 //                     </div>
 //                 </div>
-//             </div>
-//             {/* price   */}
-//             <div className="cart-hide">
-//                 <p>
-//                     {/* <FormatPrice price={price} /> */}
-//                 </p>
-//             </div>
+//             </div >
+//             <div className="food-card">
+//                 <p>{props.price}</p>
+//                 <select className='m-2 h-100 rounded'>
+//                     <option value="half">Half</option>
+//                     <option value="full">Full</option>
+//                 </select>
 
-//             {/* Quantity  */}
-//             {/* <CartAmountToggle */}
-//             amount={amount}
-//             setDecrease={() => setDecrease(id)}
-//             setIncrease={() => setIncrement(id)}
-//             />
-
-//             {/* //Subtotal */}
-//             <div className="cart-hide">
-//                 <p>
-//                     {/* <FormatPrice price={price * amount} /> */}
-//                 </p>
+//                 <div className="quantity-container">
+//                     {/* <button>-</button>
+//                     <span></span> */}
+//                     <button
+//                         onClick={() => addItem(props.item)}
+//                     >
+//                         +
+//                     </button>
+//                 </div>
 //             </div>
+//         </div >
 
-//             <div>
-//                 <FaTrash className="remove_icon" onClick={() => removeItem(id)} />
-//             </div>
-//         </div>
-//     );
-// };
+//     )
+// }
 
-// export default CartItem;
+import React from 'react';
+import { useCart } from 'react-use-cart';
+
+export const CartItem = (props) => {
+    const { addItem } = useCart();
+    const { removeItem } = useCart();
+    return (
+        <div className='pb-5'>
+            <div a href="/" aria-label="View Item">
+                <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                    <img
+                        className="object-cover w-full h-56 md:h-64 xl:h-80"
+                        src={props.img}
+                        alt=""
+                    />
+                    <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                        <p className="mb-4 text-lg font-bold text-gray-100">
+                            {props.title}
+                        </p>
+                        <p className="text-sm tracking-wide text-gray-300">
+                            {props.desc}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="food-card my-3">
+                <div className='inline-flex'>
+                    <div className='text-2xl'>₹{props.price}</div>
+                    <select className='mx-3 h-100 rounded'>
+                        <option value="half">Half</option>
+                        <option value="full">Full</option>
+                    </select>
+
+                    <div className="quantity-container ml-12">
+                        <button className='mx-3 px-3 py-2 bg-red-600 hover:bg-red-300'
+                            onClick={() => addItem(props.item)}
+                        >
+                            +
+                        </button>
+                        {/* <div>{items.quantity}</div> */}
+                        <button className='mx-3 px-3.5 py-2 bg-red-600 hover:bg-red-300'
+                            onClick={() => removeItem(props.item)}
+                        >
+                            -
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    );
+};
