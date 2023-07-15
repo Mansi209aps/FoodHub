@@ -79,16 +79,17 @@ export const CartItem = (props) => {
                     </select>
 
                     <div className="quantity-container ml-12">
-                        <button className='mx-3 px-3 py-2 bg-red-600 hover:bg-red-300'
-                            onClick={() => addItem(props.item)}
-                        >
-                            +
-                        </button>
+
                         {/* <div>{items.quantity}</div> */}
                         <button className='mx-3 px-3.5 py-2 bg-red-600 hover:bg-red-300'
                             onClick={() => removeItem(props.item)}
                         >
                             -
+                        </button>
+                        <button className='mx-3 px-3 py-2 bg-red-600 hover:bg-red-300'
+                            onClick={() => addItem(props.item)}
+                        >
+                            +
                         </button>
                     </div>
                 </div>

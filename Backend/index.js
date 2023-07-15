@@ -2,8 +2,6 @@ const express = require('express')
 const mongoose = require('mongoose')
 const dotenv = require("dotenv")
 const app = express()
-const port = 5000
-
 dotenv.config()
 
 app.use((req, res, next) => {
