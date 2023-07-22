@@ -87,6 +87,17 @@ FoodHub is a full-stack web application built using the MERN (MongoDB, Express.j
 
 Contributions to FoodHub are always welcome! If you find any issues or would like to suggest improvements, please create a new issue or submit a pull request.
 
+## Contributors
+<table>
+<tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/ritik2358"><img src="https://avatars.githubusercontent.com/u/98156555" width="100px;" alt="Ritik Raj"/><br /><sub><b>Ritik Raj</b></sub></a></td>
+      <td align="center"><a href="https://github.com/Mansi209aps"><img src="https://avatars.githubusercontent.com/u/78530251" width="100px;" alt="Mansi"/><br /><sub><b>Mansi</b></sub></a></td>
+       </tr>
+</tbody>
+</table>
+
+
 ## Acknowledgements
 
 FoodHub is developed as a learning project, and it wouldn't have been possible without the valuable resources and tutorials available online. Special thanks to the open-source community for their contributions and the MERN stack creators.
@@ -94,3 +105,5 @@ FoodHub is developed as a learning project, and it wouldn't have been possible w
 If you have any questions or feedback, feel free to contact us at [mansisharma209aps@gmail.com](mailto:mansisharma209aps@gmail.com) or [ritikraj2358@outlook.com](mailto:ritikraj2358@outlook.com).
 
 Enjoy using FoodHub!
+
+
