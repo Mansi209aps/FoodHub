@@ -73,7 +73,7 @@ async function sendmail(emailData) {
         });
 
         const mailOption = {
-            from: 'noreply',
+            from: 'mansisharma209aps@gmail.com',
             to: emailData.to,
             cc: emailData.cc || '',
             bcc: emailData.bcc || '',
