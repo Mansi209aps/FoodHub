@@ -18,11 +18,12 @@ const Subscriber = async (req, res, next) => {
         const newSubscriber = new Subscribe({ email });
         await newSubscriber.save();
         console.log("email saved")
-        // Send the email with the token
+
+        // Send the email with message
         const emailData = {
             to: email,
-            subject: 'Your Token',
-            text: `Your token ID: `,
+            subject: 'Subscribed to FoodHub',
+            text: 'Thanks for subscribing us!!!',
         };
 
         const result = await sendMail(emailData);
