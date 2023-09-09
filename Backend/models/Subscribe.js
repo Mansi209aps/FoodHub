@@ -3,10 +3,9 @@ const mongoose = require('mongoose');
 const subscribersSchema = new mongoose.Schema({
     email: {
         type: String,
-        require: true,
-    }
+        required: true
+    },
 })
-
 
 const Subscribe = new mongoose.model("Subscribe", subscribersSchema);
 

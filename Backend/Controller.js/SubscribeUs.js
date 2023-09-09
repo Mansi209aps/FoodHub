@@ -13,19 +13,20 @@ const Subscriber = async (req, res, next) => {
     }
 
     const { email } = req.body;
-    // console.log(email);
+    console.log(email);
     try {
-        const newSubscriber = new Subscribe(email);
+        const newSubscriber = new Subscribe({ email });
         await newSubscriber.save();
         console.log("email saved")
         // Send the email with the token
         const emailData = {
             to: email,
             subject: 'Your Token',
-            text: `Your token ID: ${token}`,
+            text: `Your token ID: `,
         };
 
         const result = await sendMail(emailData);
+        res.status(200).json({ success: true });
 
     } catch (err) {
         console.log(err);
