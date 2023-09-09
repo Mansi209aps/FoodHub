@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import img1 from '../images/DSC_1013016.jpg'
 import img2 from '../images/DSC_1013016a.jpg'
 
 export const Footer = () => {
+
+    const [email, setEmail] = useState(""); // State to store the email input
+    console.log(email);
+
+    const handleSubscribe = async () => {
+        try {
+            const response = await fetch("http://localhost:5000/api/Subscribe", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email }), // Send the email in the request body
+            });
+
+            if (response.ok) {
+                alert("Subscription successful!");
+                setEmail(""); // Clear the email input field after a successful subscription
+            } else {
+                alert("Subscription failed. Please try again later.");
+            }
+        } catch (error) {
+            console.error("There was an error:", error);
+            alert("Subscription failed. Please try again later.");
+        }
+    };
+
     return (
         <div>
             <div className=" flex px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-red-600">
@@ -46,10 +72,13 @@ export const Footer = () => {
                                 placeholder="Email"
                                 required
                                 type="text"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)} // Update the email state when the user types
                                 className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                             />
                             <button
-                                type="submit"
+                                type="button"
+                                onClick={handleSubscribe}
                                 className="inline-flex items-center justify-center h-12 px-5 font-medium tracking-wide text-red-600 transition duration-200 rounded shadow-md bg-white hover:bg-red-600 hover:text-white hover:border-2 border-white focus:shadow-outline focus:outline-none"
                             >
                                 Subscribe
