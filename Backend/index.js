@@ -6,6 +6,8 @@ const connectDB = require("./Config/db");
 
 const dotenv = require("dotenv")
 
+const app = express()
+
 dotenv.config()
 
 const app = express();

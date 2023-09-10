@@ -44,9 +44,7 @@ export const Footer = () => {
                             <p className="text-white font-bold">Ritik Raj</p>
                             <p className="mb-4 text-xs text-white">Full Stack Developer</p>
                             <p className="text-sm tracking-wide text-white">
-                                Secondary fermentation degrees plato units of bitterness, cask
-                                conditioned ale ibu real ale pint glass craft beer. krausen goblet
-                                grainy ibu.
+                                I'm a final year computer science student with a focus on DevOps and Full Stack development. I've contributed to various projects, including a DeCharge, TravelDiary and Automatic-Nodemailer. Connect with me for innovative solutions in web development.
                             </p>
                         </div>
                     </div>
@@ -60,7 +58,7 @@ export const Footer = () => {
                             <p className="text-white font-bold">Mansi</p>
                             <p className="mb-4 text-xs text-white">Full Stack Developer</p>
                             <p className="text-sm tracking-wide text-white">
-                                I am a motivated 4th year B.E. student with a passion for MERN stack development. I possess strong leadership skills, effective time management abilities, and excel in collaborative team environments.
+                                I am a motivated final year B.E. student with a passion for MERN stack development. I possess strong leadership skills, effective time management abilities, and excel in collaborative team environments.
                             </p>
                         </div>
 
