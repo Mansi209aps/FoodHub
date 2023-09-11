@@ -12,8 +12,6 @@ const app = express()
 
 dotenv.config()
 
-const app = express();
-
 // connect to DB
 connectDB();
 
