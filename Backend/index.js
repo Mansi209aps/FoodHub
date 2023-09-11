@@ -8,6 +8,8 @@ const auth = require('./Middleware/Auth');
 
 const dotenv = require("dotenv")
 
+const app = express()
+
 dotenv.config()
 
 const app = express();

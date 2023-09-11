@@ -5,6 +5,7 @@ import Card from './Card';
 import { CartItem } from '../Shared/CartItem';
 import Menu from '../Shared/Menu';
 
+
 const Gallery = () => {
     return (
         <div>
