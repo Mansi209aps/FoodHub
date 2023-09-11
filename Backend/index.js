@@ -4,13 +4,13 @@ const bodyParser = require("body-parser");
 const connectDB = require("./Config/db");
 // const port = 5000
 
+const auth = require('./Middleware/Auth');
+
 const dotenv = require("dotenv")
 
 const app = express()
 
 dotenv.config()
-
-const app = express();
 
 // connect to DB
 connectDB();
@@ -33,8 +33,14 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
+// Routes
+app.use('/api/signup', require("./Routes/Signup"));
+app.use('/api/login', require('./Routes/Login'));
 app.use('/api', require("./Routes/Auth"));
 app.use('/api/Subscribe', require("./Routes/SubscribeUs"));
+app.get('/auth', auth, (req, res) => {
+    res.json({ message: 'Authentication successful' });
+});
 
 // mongoose
 //     .connect(
