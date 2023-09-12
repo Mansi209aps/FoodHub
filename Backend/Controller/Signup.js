@@ -14,7 +14,7 @@ const registerUser = async (req, res, next) => {
     }
 
     const {
-        username,
+        name,
         email,
         password
     } = req.body;
@@ -27,7 +27,7 @@ const registerUser = async (req, res, next) => {
     try {
         const user = await User.findOne({ email });
         if (user) {
-            res.json({ exists: true });
+            res.json("Already exists", 409);
             return;
         }
         // } catch (e) {
@@ -47,7 +47,7 @@ const registerUser = async (req, res, next) => {
 
             // Create a new Seller instance based on the Seller model
             const newUser = new User({
-                username,
+                name,
                 email,
                 password: hashedPassword,  // Store the hashed password in the database
             });
