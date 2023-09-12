@@ -14,7 +14,7 @@ const registerUser = async (req, res, next) => {
     }
 
     const {
-        username,
+        name,
         email,
         password
     } = req.body;
@@ -47,7 +47,7 @@ const registerUser = async (req, res, next) => {
 
             // Create a new Seller instance based on the Seller model
             const newUser = new User({
-                username,
+                name,
                 email,
                 password: hashedPassword,  // Store the hashed password in the database
             });

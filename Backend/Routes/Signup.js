@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.post(
     "/",
-    [check("username", "User Name is Required").not().isEmpty()],
+    [check("name", "User Name is Required").not().isEmpty()],
     [check("email", "Email is Required").not().isEmpty().isEmail()],
     [check("password", "Password is Required").not().isEmpty()],
     RegisterController.registerUser

@@ -23,16 +23,30 @@ const Signup = () => {
                 password: credentials.password
             })
         })
-        const json = await response.json()
-        console.log(json)
+        // const json = await response.json()
+        // console.log(json)
 
-        if (!json.success) {
-            alert("Enter Valid Credentials")
-        }
-        if (json.success) {
-            // localStorage.setItem("authToken", json.authToken)
-            // console.log(localStorage.getItem("authToken"))
-            navigate('/login');
+        // if (!json.success) {
+        //     alert("Enter Valid Credentials")
+        // }
+        // if (json.success) {
+        //     // localStorage.setItem("authToken", json.authToken)
+        //     // console.log(localStorage.getItem("authToken"))
+        //     navigate('/login');
+        // }
+
+        try {
+            const json = await response.json(); // Read JSON response once
+            console.log(json);
+            if (response.status === 201) {
+                // Successful signup
+                navigate('/login');
+            } else {
+                // Signup failed
+                alert(json.message || "Signup failed");
+            }
+        } catch (error) {
+            console.error("Error reading JSON response:", error);
         }
     }
 
@@ -55,7 +69,7 @@ const Signup = () => {
                         <form className="space-y-7" action="#" method="POST" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className="block text-lg font-medium leading-6 text-black">
-                                    Username
+                                    Name
                                 </label>
                                 <div className="mt-2">
                                     <input
