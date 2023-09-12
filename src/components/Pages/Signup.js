@@ -38,9 +38,12 @@ const Signup = () => {
         try {
             const json = await response.json(); // Read JSON response once
             console.log(json);
-            if (response.status === 201) {
+            if (response.status === 200) {
                 // Successful signup
                 navigate('/login');
+            }
+            else if (response.status === 409) {
+                alert("Email Id already registered");
             } else {
                 // Signup failed
                 alert(json.message || "Signup failed");
@@ -49,7 +52,6 @@ const Signup = () => {
             console.error("Error reading JSON response:", error);
         }
     }
-
     const onChange = (event) => {
         setCredentials({ ...credentials, [event.target.name]: event.target.value })
     }

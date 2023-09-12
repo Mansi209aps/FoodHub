@@ -27,7 +27,7 @@ const registerUser = async (req, res, next) => {
     try {
         const user = await User.findOne({ email });
         if (user) {
-            res.json({ exists: true });
+            res.json("Already exists", 409);
             return;
         }
         // } catch (e) {
