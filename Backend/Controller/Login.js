@@ -20,7 +20,7 @@ const login = async (req, res, next) => {
     try {
         validateEmail = await User.findOne({ email });
 
-        console.log(validateEmail);
+        // console.log(validateEmail);
 
         if (!validateEmail) {
             const error = new HttpError("Wrong credentials", 400);
@@ -40,7 +40,7 @@ const login = async (req, res, next) => {
         //     return res.status(400).json({ errors: "Try Logging with correct credentials" });
         // }
 
-        console.log("saveds :- " + validateEmail.password);
+        // console.log("saveds :- " + validateEmail.password);
         let token;
         try {
             token = jwt.sign(

@@ -13,10 +13,10 @@ const Subscriber = async (req, res, next) => {
     }
 
     const { email } = req.body;
-    console.log(email);
+    // console.log(email);
     try {
         const exsist = await Subscribe.findOne({ email });
-        console.log(exsist);
+        // console.log(exsist);
         if (exsist) {
             // Send the email with message
             const emailData = {
@@ -29,7 +29,7 @@ const Subscriber = async (req, res, next) => {
         }
         const newSubscriber = new Subscribe({ email });
         await newSubscriber.save();
-        console.log("email saved")
+        // console.log("email saved")
 
         // Send the email with message
         const emailData = {

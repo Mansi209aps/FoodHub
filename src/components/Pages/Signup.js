@@ -37,7 +37,7 @@ const Signup = () => {
 
         try {
             const json = await response.json(); // Read JSON response once
-            console.log(json);
+            // console.log(json);
             if (response.status === 200) {
                 // Successful signup
                 navigate('/login');

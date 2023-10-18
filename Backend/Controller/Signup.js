@@ -39,11 +39,11 @@ const registerUser = async (req, res, next) => {
         try {
 
             if (password) {
-                console.log(password);
+                // console.log(password);
             }
             const saltRounds = 10;
             const hashedPassword = await bcrypt.hash(password, saltRounds);
-            console.log(hashedPassword)
+            // console.log(hashedPassword)
 
             // Create a new Seller instance based on the Seller model
             const newUser = new User({
@@ -51,11 +51,11 @@ const registerUser = async (req, res, next) => {
                 email,
                 password: hashedPassword,  // Store the hashed password in the database
             });
-            console.log("hashedPassword", newUser.password);
+            // console.log("hashedPassword", newUser.password);
 
             // Save the user data to the database
             await newUser.save();
-            console.log("hashedPassword", newUser.password);
+            // console.log("hashedPassword", newUser.password);
             // Return a success response
             res.json("Successfully signed up", 200);
         } catch (error) {

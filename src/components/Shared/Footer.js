@@ -5,7 +5,7 @@ import img2 from '../images/DSC_1013016a.jpg'
 export const Footer = () => {
 
     const [email, setEmail] = useState(""); // State to store the email input
-    console.log(email);
+    // console.log(email);
 
     const handleSubscribe = async () => {
         try {
